@@ -8,6 +8,5 @@ public class Application {
     public static void main(String[] args) {
         String result = new Calculator(new ConsoleReader()).start();
         System.out.println(result);
-        System.out.println(result);
     }
 }
