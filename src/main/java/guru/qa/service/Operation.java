@@ -1,13 +1,16 @@
 package guru.qa.service;
 
-import guru.qa.service.impl.MinusOperationHandler;
-import guru.qa.service.impl.MultOperationHandler;
+import guru.qa.service.impl.DivideOperationHandler;
+import guru.qa.service.impl.MultiplicationOperationHandler;
+import guru.qa.service.impl.SubstractionOperationHandler;
 import guru.qa.service.impl.SumOperationHandler;
 
 public enum Operation {
     SUM('+', new SumOperationHandler()),
-    MULT('*', new MultOperationHandler()),
-    MINUS('-', new MinusOperationHandler());
+    MULTIPLICATION('*', new MultiplicationOperationHandler()),
+    SUBTRACTION('-', new SubstractionOperationHandler()),
+    DIVIDE('/', new DivideOperationHandler()),
+    EXPONENTIAL('^', new SubstractionOperationHandler());
 
     private final char symbol;
     private final OperationHandler operation;

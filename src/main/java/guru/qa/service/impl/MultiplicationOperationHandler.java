@@ -2,7 +2,7 @@ package guru.qa.service.impl;
 
 import guru.qa.service.OperationHandler;
 
-public class MultOperationHandler implements OperationHandler {
+public class MultiplicationOperationHandler implements OperationHandler {
 
     @Override
     public int invoke(int first, int second) {
