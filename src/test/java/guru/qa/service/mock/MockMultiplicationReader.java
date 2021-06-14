@@ -3,7 +3,7 @@ package guru.qa.service.mock;
 import guru.qa.service.Operation;
 import guru.qa.service.Reader;
 
-public class MockMultReader implements Reader {
+public class MockMultiplicationReader implements Reader {
     @Override
     public int readFirstArg() {
         return 3;
@@ -16,6 +16,6 @@ public class MockMultReader implements Reader {
 
     @Override
     public Operation readMathOperation() {
-        return Operation.MULT;
+        return Operation.MULTIPLICATION;
     }
 }
