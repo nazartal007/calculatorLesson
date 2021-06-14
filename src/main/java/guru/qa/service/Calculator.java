@@ -11,14 +11,13 @@ public class Calculator {
     }
 
     public String start() {
-        writer.handleString("Please provide first argument");
-        writer.handleString("Введите два числа: ");
+        writer.handleString(StringMessages.FIRST_ARG_MESSAGE.getMessage());
         int first = reader.readFirstArg();
+        writer.handleString(StringMessages.SECOND_ARG_MESSAGE.getMessage());
         int second = reader.readSecondArg();
-        writer.handleString("Введите оператор (+, *, /, ^): ");
+        writer.handleString(StringMessages.OPERATOR_ARG_MESSAGE.getMessage());
         Operation po = reader.readMathOperation();
         int sum = po.getOperation().invoke(first, second);
-        writer.handleString("Результат");
-        return writer.handleString(first + " " + po.getSymbol() + " " + second + " = " + sum);
+        return writer.handleString(StringMessages.SUCCESSES_MESSAGE.getMessage() + first + " " + po.getSymbol() + " " + second + " = " + sum);
     }
 }

@@ -7,7 +7,7 @@ import guru.qa.service.impl.ConsoleWriter;
 public class Application {
 
     public static void main(String[] args) {
-        String result = new Calculator(new ConsoleReader(), new ConsoleWriter()).start();
-        System.out.println(result);
+        new Calculator(new ConsoleReader(), new ConsoleWriter()).start();
+
     }
 }
